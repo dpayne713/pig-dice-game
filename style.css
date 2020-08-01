@@ -1,5 +1,5 @@
 /**********************************************
-*** GENERAL
+    GENERAL
 **********************************************/
 
 * {
@@ -31,14 +31,9 @@ body {
     display: flex; 
     position: relative; 
     margin: 200px auto; 
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
     background-color: #fff;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-
 }
 
 .player-0-panel,
@@ -49,8 +44,6 @@ body {
     padding: 100px 50px; 
     text-align: center;
 }
-
-
 
 /**********************************************
 *** PLAYERS
@@ -77,15 +70,6 @@ body {
 
 .active { background-color: #f7f7f7; }
 .active .player-name { font-weight: 300; }
-
-/* .active .player-name::after {
-    content: "\2022";
-    font-size: 47px;
-    position: absolute;
-    color: #EB4D4D;
-    top: -7px;
-    right: 0px;
-} */
 
 .player-current-box {
     background-color: #EB4D4D;
@@ -117,6 +101,7 @@ button {
     border: none;
     font-family: Lato;
     font-size: 20px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.342);
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 300;
@@ -131,11 +116,12 @@ button:focus {
 }
 
 i {
-    color: #EB4D4D;
+    color: rgb(44, 44, 44); 
     display: inline-block;
     margin-right: 15px;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.192);
     vertical-align: text-top;
     margin-top: -4px;
     transition: margin 0.3s;
