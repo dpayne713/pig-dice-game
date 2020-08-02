@@ -16,7 +16,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(images/back.jpg);
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4))/* , url(images/back.jpg */;
     background-size: cover;
     background-position: center;
     font-family: Lato;
@@ -30,7 +30,7 @@ body {
     max-width: 900px;
     display: flex; 
     position: relative; 
-    margin: 200px auto; 
+    margin: 100px auto; 
     background-color: #fff;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -44,14 +44,14 @@ body {
     left: 50%; 
     transform: translateX(-50%);
     margin: 20px auto; 
-    width: 70%; 
+    width: 100%; 
 }
 
 .player-0-panel,
 .player-1-panel {
     width: 50%;
     float: left;
-    height: 680px;
+    height: 700px;
     padding: 100px 50px; 
     text-align: center;
 }
@@ -67,7 +67,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 10px;
     position: relative;
 }
@@ -105,14 +105,14 @@ body {
 
 button {
     position: absolute;
-    width: 200px;
+    width: 300px;
     left: 50%;
     transform: translateX(-50%);
     color: #555;
     background: none;
     border: none;
     font-family: Lato;
-    font-size: 20px;
+    font-size: 30px;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.342);
     text-transform: uppercase;
     cursor: pointer;
@@ -135,18 +135,17 @@ i {
     line-height: 1;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.192);
     vertical-align: text-top;
-    margin-top: -4px;
     transition: margin 0.3s;
 }
 
 .btn-new { top: 530px;}
 .btn-new-ai {top: 590px;}
 .btn-roll { top: 380px;}
-.btn-hold { top: 430px;}
+.btn-hold { top: 445px;}
 
 .dice {
     position: absolute;  
-    top: 40%; 
+    top: 30%; 
     left: 50%;
     transform: translateX(-50%) scale(1);
     transform-origin: right;
@@ -194,30 +193,35 @@ i {
 @media (max-width: 600px) {
     .wrapper {
         width: 100 vw;
-        height: 80%; 
+        height: 100%;  
         margin: 0 auto; 
     }
-    
-    .player-name{
-        font-size: 25px; 
+
+   
+    .player-0-panel,
+    .player-1-panel {
+    padding: 100px 40px;
+    margin-bottom: 10px;  
+    height: 900px; 
     }
-    .btn-roll { top: 500px;}
-    .btn-hold { top: 550px;}
-    .btn-new { top: 600px; }
+    .player-name{
+        font-size: 30px; 
+        margin-top: 50px; 
+    }
+    .btn-roll { top: 520px;}
+    .btn-hold { top: 570px;}
+    .btn-new { top: 640px; }
+    .btn-new-ai { top: 690px; }
 
     .player-current-box {
         width: 100%;
         padding: 10px;
     }
-    .player-0-panel,
-    .player-1-panel {
-    padding: 100px 40px;
-    margin-bottom: 10px;  
-    }
+  
 }
 
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
     .player-name{
         font-size: 20px; 
     }
-}
+} */
